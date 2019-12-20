@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.netology.kotlinhomework5_2_1.PostTemplate.Post
 import com.netology.kotlinhomework5_2_1.PostTemplate.PostType
+import com.netology.kotlinhomework5_2_1.PostTemplate.publicationTime
 import kotlinx.android.synthetic.main.post_card.view.*
 
 
@@ -98,11 +99,11 @@ class PostViewHolder(val adapter: PostAdapter, view: View) : RecyclerView.ViewHo
                         textView_counte_share.text = item.shareCounter.toString()
 
                         if (item.content != null) {
-                            sharePost(item.author, item.created, item.content)
+                            sharePost(item.author, publicationTimeString(item.created), item.content)
                         } else {
                             sharePost(
                                 item.author,
-                                item.created,
+                                publicationTimeString(item.created),
                                 "R.String.null_massenge"
                             )
                         }
@@ -163,7 +164,8 @@ class PostViewHolder(val adapter: PostAdapter, view: View) : RecyclerView.ViewHo
 
         with(itemView) {
             textView_author.text = post.author
-            textView_data.text = post.created
+            textView_data.text = publicationTimeString(post.created)
+            //textView_data.text = post.created
 
             imageBtn_special_post.visibility = View.GONE
             textView_postType.visibility = View.GONE
@@ -299,6 +301,13 @@ class PostViewHolder(val adapter: PostAdapter, view: View) : RecyclerView.ViewHo
 
     }
 
+
+    // Преобразование даты создания поста в отметки времени относительно текущей даты
+    fun publicationTimeString (created: Long): String {
+
+        return  publicationTime(System.currentTimeMillis() - created)
+
+    }
 }
 
 

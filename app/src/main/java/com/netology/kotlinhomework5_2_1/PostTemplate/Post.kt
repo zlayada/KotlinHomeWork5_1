@@ -7,7 +7,7 @@ open class Post (
     val id: Long,
     val author: String,
     val content: String?,
-    val created: String, // дата - пока строка
+    val created: Long,
 
 
     // Начальные данные поста

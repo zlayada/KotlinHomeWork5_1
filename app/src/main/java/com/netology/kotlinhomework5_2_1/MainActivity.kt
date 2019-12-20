@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             0,
             "Джонатон Уэйн",
             "Самое первое сообщение в этой социальной сети. Где отображаются переносы слов, но не более ограниченных строк.",
-            "18 ноября 2019",
+            1550864590000,
             likedByMe = false,
             CommentdByMe = false,
             ShareByMe = false,
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 1,
                 "Мистер Смит",
                 "Матрица жива!!!",
-                "19 ноября 2019",
+                1564864590000,
                 type = PostType.REPOST,
                 source = post,
                 likedByMe = true,
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 2,
                 "Нео Протуберанец",
                 "Великое деяние Архитектора заключается в поиске багов в процессе всей жизни.",
-                "20 ноября 2019",
+                1574864590000,
                 type = PostType.REPOST,
                 source = post,
                 likedByMe = true,
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                 3,
                 "Петр Авергунг",
                 "Добро пожаловать в мир цифровой недвижимости!",
-                "21 ноября 2019",
+                1584864590000,
                 likedByMe = true,
                 CommentdByMe = true,
                 ShareByMe = true,
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                 4,
                 "Аноним",
                 "Всемирная теория заговора включает неизменную идею мягкого влияния на людей, не имеющих доступа к власти и ресурсам.",
-                "21 ноября 2019",
+                1594864590000,
                 type = PostType.VIDEO,
                 videolink = "https://www.youtube.com/watch?v=EOkIIyuGAUs"
             ),
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 5,
                 "Дед Мороз",
                 "Подготовка к Новому году включает в себя список дел который известен каждому.",
-                "22 ноября 2019",
+                1604864590000,
                 likedByMe = true,
                 CommentdByMe = true,
                 ShareByMe = true,
@@ -99,17 +99,13 @@ class MainActivity : AppCompatActivity() {
                 6,
                 "Дед Мазай",
                 "Исследование костромских болот на личном примере.",
-                "21 ноября 2019",
+                1614864590000,
                 type = PostType.VIDEO,
                 videolink = "https://www.youtube.com/watch?v=EOkIIyuGAUs",
                 address = "Нея",
                 coordinates_lat = 41.40338,
                 coordinates_lng = 2.17403
             )
-
-
-
-
 
         )
 
