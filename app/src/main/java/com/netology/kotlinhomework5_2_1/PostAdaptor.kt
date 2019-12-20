@@ -222,6 +222,13 @@ class PostViewHolder(val adapter: PostAdapter, view: View) : RecyclerView.ViewHo
                 textView_address.text = post.address
             }
 
+            // Визуализация геометки и адреса для любых постов с геометкой
+            if (post.address != null) {
+                imageBtn_location.visibility = View.VISIBLE
+                textView_address.visibility = View.VISIBLE
+                textView_address.text = post.address
+            }
+
             // Визуализация рекламного банера для постов типа ADVERTISING
             if (post.type == PostType.ADVERTISING) {
                 imageBtn_special_post.visibility = View.VISIBLE
@@ -274,7 +281,7 @@ class PostViewHolder(val adapter: PostAdapter, view: View) : RecyclerView.ViewHo
         itemView.context.startActivity(intent)
     }
 
-
+    // Открытие карты по координатам из поста
     fun openUrl(open_url: String): Unit {
 
         val address = Uri.parse(open_url)

@@ -94,7 +94,23 @@ class MainActivity : AppCompatActivity() {
                 address = "Великий Устюг",
                 coordinates_lat = 41.40338,
                 coordinates_lng = 2.17403
+            ),
+            Post(
+                6,
+                "Дед Мазай",
+                "Исследование костромских болот на личном примере.",
+                "21 ноября 2019",
+                type = PostType.VIDEO,
+                videolink = "https://www.youtube.com/watch?v=EOkIIyuGAUs",
+                address = "Нея",
+                coordinates_lat = 41.40338,
+                coordinates_lng = 2.17403
             )
+
+
+
+
+
         )
 
         with(container) {
